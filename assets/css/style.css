@@ -1,0 +1,83 @@
+:root {
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+	--primary-color: rgb(13, 106, 134);
+	--primary-color-darker: rgb(12, 135, 172);
+}
+
+* {
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	margin: 0;
+	padding: 50px 0 0 0;
+	background: var(--primary-color);
+	font-family: 'Open sans', sans-serif;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.container {
+	max-width: 640px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.container h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.container p {
+	display: flex;
+	justify-content: center;
+}
+
+.container ul {
+	max-width: 100%;
+	margin: 0 50px;
+}
+
+form input,
+form label,
+form button {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+form input {
+	font-size: 24px;
+	height: 35px;
+	padding: 0 20px;
+	border: 0.1px solid #dddddd;
+	border-radius: 5px;
+}
+
+form input:focus {
+	outline: 0.1px solid var(--primary-color);
+}
+
+form button {
+	border: none;
+	background: var(--primary-color);
+	color: #ffff;
+	font-size: 20px;
+	/* text-transform: uppercase */
+	height: 50px;
+	cursor: pointer;
+	margin-top: 35px;
+	border-radius: 7px;
+	font-weight: 700;
+}
+
+form button:hover {
+	background: var(--primary-color-darker);
+}
+
+.resultado {
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
+}
